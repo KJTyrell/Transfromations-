@@ -1,0 +1,62 @@
+/* TRANSFORMATIONS */
+
+
+
+
+/* BASE STYLES
+------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #8b84d4;
+    color: #ffffff;
+    font-family: sans-serif ;
+}
+
+img {
+
+  vertical-align: middle;
+}
+
+
+
+
+/* WEIRD STUFF
+------------------------------------- */
+.daytime{ 
+    font-size: 65px;
+    text-align: center;
+
+}
+
+.psunrise{ 
+
+    animation-name: spin;
+    animation-duration: 2s;
+    padding: 2cm;
+
+}
+
+.purple { 
+    animation-name: glide;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    padding: 2cm;
+
+}
+
+@keyframes glide {
+    from {transform:skew(0deg);}
+    to {transform: skew(250deg);}
+}
+
+@keyframes spin {
+    from{transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+
